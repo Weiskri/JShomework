@@ -3,45 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <script src="JavaScript.js"></script>
     <link rel="stylesheet" href="animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
 
     <div onclick="myFunction()"><h1 class="animated" id="stuff">Stuff</h1></div>
-
-    <script>
-        var x = document.getElementById("stuff"); // points to h1 by ID
-
-        function myFunction() {
-            x.style.WebkitAnimation = "jackInTheBox 4s 2"; 
-            x.style.animation = "jackInTheBox 4s 2";       // for other browsers
-        }
-
-        // for chrome and safari
-        x.addEventListener("webkitAnimationStart", myStartFunction);
-        x.addEventListener("webkitAnimationIteration", myRepeatFunction);
-        x.addEventListener("webkitAnimationEnd", myEndFunction);
-
-        // other browsers
-        x.addEventListener("animationstart", myStartFunction);
-        x.addEventListener("animationiteration", myRepeatFunction);
-        x.addEventListener("animationend", myEndFunction);
-
-        function myStartFunction() {
-            this.style.color = "#9b7da3";
-        }
-
-        function myRepeatFunction() {
-            this.style.color = "#82b1ba";
-        }
-
-        function myEndFunction() {
-            this.style.color = "#b8b2ba";
-        }
-    </script>
 
 </body>
 </html>
